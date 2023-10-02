@@ -27,7 +27,7 @@ apt-get install nodejs -y
 apt install redis-server -y
 echo "正在克隆 Miao-Yunzai 仓库..."
 if [ ! -d "$HOME/Miao-Yunzai/" ]; then # 如果不存在 Yunzai-Bot 文件夹
-  git clone --depth=1 https://gitee.com/yoimiya-kokomi/Miao-Yunzai.git ~/Miao-Yunzai # 克隆 Miao-Yunzai 项目
+  git clone --depth=1 https://github.com/yoimiya-kokomi/Miao-Yunzai.git ~/Miao-Yunzai # 克隆 Miao-Yunzai 项目
       # 安装模块
    echo "正在安装模块..."
     npm --registry=https://registry.npmmirror.com install pnpm -g # 使用 npm 安装 pnpm 包管理器
@@ -37,7 +37,7 @@ if [ ! -d "$HOME/Miao-Yunzai/" ]; then # 如果不存在 Yunzai-Bot 文件夹
     pnpm config set registry https://registry.npmmirror.com # 配置 pnpm 的镜像源为 npmmirror.com
     pnpm install -P # 使用 pnpm 安装项目的依赖
     cd $HOME/Miao-Yunzai
-    git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+    git clone --depth=1 https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
     if [ ! -d "$HOME/Miao-Yunzai/" ]; then # 如果没有克隆成功
         echo "克隆失败"
     else # 如果克隆成功
@@ -68,7 +68,7 @@ else # 如果已经存在 Yunzai-Bot 文件夹，则不再克隆项目
     if [ ! -d "$HOME/Miao-Yunzai/plugins/miao-plugin" ]; then # 如果没有miao-plugin
         echo "检测到你没有安装，即将开始安装！"
         cd $HOME/Miao-Yunzai
-        git clone --depth=1 https://gitee.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
+        git clone --depth=1 https://github.com/yoimiya-kokomi/miao-plugin.git ./plugins/miao-plugin/
         pnpm install -P
     else # 如果有miao-plugin
         echo "看来你已经装了，保险一点再给你装一下依赖吧"
@@ -81,4 +81,4 @@ for ((countdown=5; countdown>0; countdown--)); do
     echo "倒计时: $countdown"
     sleep 1
 done
-bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/miao-menu.sh)
+bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/miao-menu.sh)

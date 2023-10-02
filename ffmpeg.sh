@@ -11,8 +11,8 @@ echo "权限检查已通过！"
 apt update
 apt upgrade
 apt install git
-echo "正在从gitee加速镜像获取ffmpeg..."
-git clone https://gitee.com/mirrors/ffmpeg.git ~/ffmpeg
+echo "正在从github获取ffmpeg..."
+git clone https://github.com/FFmpeg/FFmpeg.git ~/ffmpeg
 apt-get install zlib1g-dev libbz2-dev libssl-dev libncurses5-dev  libsqlite3-dev libreadline-dev tk-dev libgdbm-dev libdb-dev libpcap-dev xz-utils libexpat1-dev   liblzma-dev libffi-dev  libc6-dev
 echo "正在安装依赖..."
 apt install make
@@ -57,3 +57,9 @@ make install
 cd $HOME/ffmpeg
 mv ffmpeg /usr/local/bin/
 mv ffprobe /usr/local/bin/
+echo "已安装完成ffmpeg，五秒后将退出脚本..."
+for ((countdown=5; countdown>0; countdown--)); do
+    echo "倒计时: $countdown"
+    sleep 1
+done
+bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/miao-menu.sh)

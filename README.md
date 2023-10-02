@@ -67,8 +67,11 @@ cd ~/Termux-Linux/Ubuntu
  **打开系统后直接运行这些命令** 
 
 ```
-# 使用 Github
-bash xxx（暂未开放)
+# 使用 Github（更新可能不及时）
+
+apt update
+apt install curl -y
+bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/miao-menu.sh)
 
 
 # 使用Gitee

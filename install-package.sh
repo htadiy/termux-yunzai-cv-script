@@ -26,4 +26,4 @@ for ((countdown=5; countdown>0; countdown--)); do
     echo "倒计时: $countdown"
     sleep 1
 done
-bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/miao-menu.sh)
+bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/miao-menu.sh)

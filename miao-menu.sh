@@ -26,19 +26,19 @@ check_arch
 
 
 function install_packages {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/install-package.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/install-package.sh)
 }
 
 function install_nodejs {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/install-nodejs.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/install-nodejs.sh)
 }
 
 function install_python {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/install-python.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/install-python.sh)
 }
 
 function clone_repository {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/clone-miao-yunzai.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/clone-miao-yunzai.sh)
 }
 
 function start_Miao-Yunzai {
@@ -50,7 +50,7 @@ function start_Miao-Yunzai {
 }
 
 function install_plugins {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/plugin.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/plugin.sh)
 }
 
 function install_fonts-wqy-microhei {
@@ -60,11 +60,11 @@ function install_fonts-wqy-microhei {
 }
 
 function install_Miao-Yunzai-Tmoe {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/tmoe-install-miao.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/tmoe-install-miao.sh)
 }
 
 function ffmpeg {
-  bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/ffmpeg.sh)
+  bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/ffmpeg.sh)
 }
 
 function quit {
