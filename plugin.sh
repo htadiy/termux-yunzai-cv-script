@@ -8,16 +8,16 @@
 current_user=$(whoami)
 
 if [ "$current_user" != "root" ]; then
-  echo "请使用root用户来使用此脚本！"
+  echo -e "\e[1;31m请使用root用户来使用此脚本！\e[0m"
   exit 1
 fi
 
-echo "权限检查已通过！"
+echo -e "\e[1;31m权限检查已通过！\e[0m"
 
   while true; do
     sleep 5
     clear
-    echo "欢迎使用插件喵崽插件安装管理器！"
+    echo -e "\e[1;31m欢迎使用插件管理器！\e[0m"
     cd $HOME/Miao-Yunzai
 
     echo "------------------------插件菜单 Made By htadiy------------------------"

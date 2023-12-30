@@ -6,14 +6,14 @@
 current_user=$(whoami)
 
 if [ "$current_user" != "root" ]; then
-  echo "请使用root用户来使用此脚本！"
+  echo -e "\e[1;31m请使用root用户来使用此脚本！\e[0m"
   exit 1
 fi
 
-echo "权限检查已通过！开始安装依赖包..."
+echo -e "\e[1;31m权限检查通过，开始安装依赖包...\e[0m"
 
 echo -e "\e[1;36m  少女祈祷中..\e[0m"
-echo "正在安装依赖的软件包..."
+echo -e "\e[1;31m正在安装依赖的软件包...\e[0m"
 apt update && apt upgrade -y
 apt install wget curl redis-server chromium-browser git -y
 git config --global http.sslVerify false # 配置 Git 不验证 ssl 证书，以便拉取项目
