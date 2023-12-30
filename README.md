@@ -45,7 +45,7 @@
 sed -i 's@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/termux-packages-24 stable main@' $PREFIX/etc/apt/sources.list && apt update && apt upgrade
 #更新过程会出现冲突，询问是否替换直接回车即可
 apt install proot wget -y
-bash <(curl -sL https://gitee.com/paimon114514/termux-yunzai-cv-script/raw/master/ubuntu/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/htadiy/termux-yunzai-cv-script/main/ubuntu/install.sh)
 
 ./startubuntu.sh
 #启动ubuntu
@@ -132,6 +132,5 @@ A：跟你的cpu性能有关，越好就编译的越快，安装的也快。
 
 |                           Nickname                            | Contribution         |
 | :-----------------------------------------------------------: | -------------------- |
-|         [Yunzai-Bot](../../../../Le-niao/Yunzai-Bot)          | 乐神的 Yunzai-Bot    |
 |     [Miao-Yunzai](../../../../yoimiya-kokomi/Miao-Yunzai)     | 喵喵的 Miao-Yunzai   |
 |  [渔火Arcadia](../../../../yhArcadia/Yunzai-Bot-plugins-index)  | 云崽插件来源   |
